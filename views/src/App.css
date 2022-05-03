@@ -1,0 +1,259 @@
+.login-root {
+  height: 100vh;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgb(47, 49, 54);
+}
+
+.login-signin {
+  border-radius: 20px;
+  padding: 4% 15px;
+  border: solid 2px;
+  border-color: rgb(182, 49, 62);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.login-signin input,
+.login-signin h1,
+.login-signin div,
+.login-signin p {
+  margin: 15px;
+}
+
+.login-signin h1 {
+  font-weight: bolder;
+}
+.login-logo {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.login-signin div {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 200px;
+}
+.login-signin input {
+  padding: 10px;
+  border-style: solid;
+  border-color: rgb(182, 49, 62);
+  border-radius: 15px;
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+.login-signin input:focus {
+  color: white;
+  border-style: solid;
+  border-color: rgb(182, 49, 62);
+  outline: none;
+}
+
+.login-btn {
+  padding: 10px 50px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.homepage {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.NavBar {
+  background-color: rgb(32, 34, 37);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 72px;
+  position: fixed;
+}
+.NavIcons {
+  margin: 10px 0px;
+  color: rgb(182, 49, 62);
+  border-radius: 50%;
+  background-color: rgb(54, 57, 63);
+  padding: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.NavIcons:first-child,
+.NavIcons:hover {
+  background-color: rgb(182, 49, 62);
+  color: white;
+}
+.NavIcons:hover {
+  border-radius: 30%;
+}
+
+.home-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(47, 49, 54);
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  height: 98vh;
+  font-weight: bold;
+  width: 240px;
+  position: fixed;
+  left: 75px;
+}
+
+.home-profile-icons {
+  display: flex;
+}
+.home-prof-icons {
+  border-radius: 20px;
+  width: 60px;
+  margin: 2px;
+}
+.home-prof-icons:first-child,
+.home-prof-icons:nth-child(3) {
+  width: 80px !important;
+}
+
+.home-profile img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.home-profile h5 {
+  font-weight: bold;
+}
+
+.home-profile h4,
+.home-card h4,
+.friends h4 {
+  font-weight: bold;
+  padding: 20px 0 10px;
+  border: solid 0px rgba(182, 49, 62, 0.6);
+  border-bottom-width: 2px;
+  text-align: center;
+}
+
+.home-card {
+  background-color: rgb(54, 57, 63);
+  color: white;
+  position: absolute;
+  left: 320px;
+}
+
+.friends {
+  background-color: rgb(47, 49, 54);
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  right: 0%;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.friendsSearch,
+.searches {
+  padding: 8px 10px;
+  width: 225px;
+  border-style: solid;
+  background-color: rgb(32, 32, 32);
+  border-color: rgb(182, 49, 62);
+  color: white;
+  border-radius: 20px;
+}
+
+.friendsSearch:focus .searches:focus {
+  color: white;
+  border-style: solid;
+  border-color: rgb(182, 49, 62);
+  outline: none;
+}
+
+.friends div {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 140px;
+}
+.friends div ul {
+  display: flex;
+}
+.friends ul img {
+  margin-right: 10px;
+}
+.friends ul p {
+  padding-top: 8px;
+}
+.friendsimg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.login-btn-friend {
+  padding: 8px 50px;
+  border-radius: 20px;
+}
+.friendsSearch {
+  position: fixed;
+  bottom: 1.5%;
+}
+.login-btn-friend {
+  position: fixed;
+  bottom: 10%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.form input {
+  margin-bottom: 6px;
+  padding: 8px 10px;
+  width: 225px;
+  border-style: solid;
+  background-color: rgb(32, 32, 32);
+  border-color: rgb(182, 49, 62);
+  color: white;
+  border-radius: 20px;
+}
+.form .home-p {
+  width: 225px;
+  border-radius: 20px;
+}
+.cross {
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(182, 49, 62);
+  border-radius: 50%;
+  margin: 10px;
+  margin-left: 27%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    display: none;
+  }
+  .friends {
+    display: none;
+  }
+  .home-profile {
+    display: none;
+    width: 0;
+  }
+  .home-card {
+    position: relative;
+    left: 80px;
+  }
+}
